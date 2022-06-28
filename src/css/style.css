@@ -16,7 +16,7 @@ body {
 nav {
   display: flex;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   color: white;
   width: 925px;
   height: 55px;
@@ -64,7 +64,7 @@ nav .orange-bar {
 .personal-data {
   width: 40%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .id-picture {
@@ -91,43 +91,84 @@ nav .orange-bar {
   margin-bottom: -40px;
 }
 
-.data-list {
+.personal-data .title span {
+  position: relative;
+  bottom: 0.1em;
+  font-size: x-small;
+}
+
+.personal-data-list {
   border: 1px solid rgb(153, 153, 153);
   border-top: 0;
-  margin-left: -1px;
-  margin-right: -1px;
-  padding: 60px 30px 50px;
-  font-size: 17px;
+  margin: auto -1px;
+  padding: 60px 30px 20px;
+  font-size: 14px;
   list-style-type: none;
   font-weight: 900;
 }
 
-.data-list p {
+.personal-data-list p {
   color: rgb(68, 68, 68);
 }
 
-.data-list li {
+.personal-data-list li {
   margin: 10px;
+  margin-bottom: 20px;
+}
+
+.right-content {
+  border-bottom: 1px solid rgb(153, 153, 153);
+  margin-top: 80px;
+  width: 60%;
+  height: auto;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.right-content .title {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: auto auto 40px -22px;
+}
+
+.right-content .title span {
+  position: relative;
+  bottom: 0.1em;
+  right: -7px;
+  color: #1da1b8;
+  font-size: x-small;
+}
+
+.right-content p {
+  color: #1da1b8;
+  font-size: 18px;
+}
+
+.right-content li {
+  margin-top: 25px;
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.right-content li span {
+  font-weight: 900;
+  color: black;
 }
 
 .academic-data {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  margin-left: -105px;
+  padding-bottom: 40px;
 }
 
-.academic-data .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #faa542;
-  color: white;
-  width: 100%;
-  height: 55px;
-  font-size: 20px;
-  font-weight: 900;
-  /* letter-spacing: 6px; */
-  margin-left: -0;
-  margin-top: 40px;
+.right-content hr {
+  width: auto;
+  margin-left: -20px;
+  border: 0;
+  border-top: 1px solid rgb(153, 153, 153);
+}
+
+.work-data {
+  margin-top: 60px;
 }
