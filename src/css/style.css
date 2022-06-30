@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
+  font-weight: 900;
 }
 
 body {
@@ -48,10 +49,11 @@ nav .orange-bar {
   height: 100%;
   border-radius: 0 25px 25px 0;
   font-size: 22px;
-  font-weight: 900;
 }
 
-.top-content {
+.top-content,
+.mid-content,
+.bot-content {
   display: flex;
   background-color: white;
   width: 100%;
@@ -61,12 +63,12 @@ nav .orange-bar {
 }
 
 .mid-content {
-  display: flex;
-  background-color: white;
-  width: 100%;
-  max-width: 1030px;
-  margin: auto auto;
   padding: 0 105px;
+}
+
+.bot-content {
+  padding: 0 105px 145px;
+  border-bottom: 1px solid rgb(153, 153, 153);
 }
 
 .personal-data {
@@ -112,10 +114,9 @@ nav .orange-bar {
   border: 1px solid rgb(153, 153, 153);
   border-top: 0;
   margin: auto -1px;
-  padding: 60px 30px 20px;
+  padding: 60px 0 20px 30px;
   font-size: 14px;
   list-style-type: none;
-  font-weight: 900;
 }
 
 .personal-data p {
@@ -147,7 +148,6 @@ nav .orange-bar {
 .right-box .title {
   color: rgb(153, 153, 153);
   font-size: 15px;
-  font-weight: 900;
   letter-spacing: 5px;
   margin-bottom: 40px;
   margin-left: -22px;
@@ -174,7 +174,6 @@ nav .orange-bar {
 }
 
 .right-box li span {
-  font-weight: 900;
   color: black;
 }
 
@@ -186,17 +185,55 @@ nav .orange-bar {
 }
 
 .language-data {
-  position: relative;
   width: 40%;
   margin: 0 1px;
-  padding: 40px 39px 20px;
+  padding: 40px 0 20px 39px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.reference-data {
+  margin: 0 1px;
+  padding: 40px 0 0 39px;
+  width: 100%;
+}
+
+.mid-content .title,
+.reference-data .title {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  letter-spacing: 5px;
+  margin-left: -23px;
+  margin-bottom: 25px;
+}
+
+.mid-content .title span,
+.reference-data .title span {
+  position: relative;
+  bottom: 0.1em;
+  right: -7px;
+  color: rgb(255, 51, 51);
+  font-size: x-small;
+}
+
+.language-data li,
+.reference-data li {
+  list-style-type: none;
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.language-data p,
+.reference-data span {
+  color: black;
 }
 
 .skill-data {
   position: relative;
   width: 60%;
-  padding: 40px 39px 20px 50px;
+  padding: 40px 0 25px 50px;
   margin-left: -2px;
+  border-bottom: 1px solid rgb(153, 153, 153);
 }
 
 .skill-data::before {
@@ -208,38 +245,19 @@ nav .orange-bar {
   border-left: 1px solid rgb(153, 153, 153);
 }
 
-.mid-content .title {
-  color: rgb(153, 153, 153);
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  margin-left: -23px;
-  margin-bottom: 25px;
-}
-
-.mid-content .title span {
-  position: relative;
-  bottom: 0.1em;
-  right: -7px;
+.skill-data li {
+  margin-left: 30px;
   color: rgb(255, 51, 51);
-  font-size: x-small;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
-.mid-content p {
+.skill-data p {
   color: rgb(68, 68, 68);
 }
 
-.skill-data li {
-  font-weight: 300;
-  margin-left: 30px;
-  color: rgb(255, 51, 51);
-  margin-bottom: 2px;
-}
-
 .skill-data li:first-child {
-  font-weight: 900;
   list-style-type: none;
-  font-weight: 900;
   color: black;
   list-style-type: none;
   margin-left: 0;
