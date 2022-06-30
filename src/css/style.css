@@ -136,6 +136,14 @@ nav .orange-bar {
   padding-left: 50px;
 }
 
+.academic-data {
+  padding-bottom: 40px;
+}
+
+.work-data {
+  margin-top: 60px;
+}
+
 .right-box .title {
   color: rgb(153, 153, 153);
   font-size: 15px;
@@ -170,10 +178,6 @@ nav .orange-bar {
   color: black;
 }
 
-.academic-data {
-  padding-bottom: 40px;
-}
-
 .right-box hr {
   width: auto;
   margin-left: -20px;
@@ -181,25 +185,27 @@ nav .orange-bar {
   border-top: 1px solid rgb(153, 153, 153);
 }
 
-.work-data {
-  margin-top: 60px;
-}
-
 .language-data {
   position: relative;
   width: 40%;
-  margin: auto 1px;
+  margin: 0 1px;
   padding: 40px 39px 20px;
-  border-bottom: 1px solid rgb(153, 153, 153);
 }
 
-.language-data:after {
+.skill-data {
+  position: relative;
+  width: 60%;
+  padding: 40px 39px 20px 50px;
+  margin-left: -2px;
+}
+
+.skill-data::before {
   content: '';
   position: absolute;
-  right: 0px;
-  top: 25%;
-  height: 50%;
-  border-right: 1px solid rgb(153, 153, 153);
+  left: 0px;
+  top: 15%;
+  height: 75%;
+  border-left: 1px solid rgb(153, 153, 153);
 }
 
 .mid-content .title {
@@ -219,10 +225,22 @@ nav .orange-bar {
   font-size: x-small;
 }
 
-.mid-content ul {
-  list-style-type: none;
-}
-
 .mid-content p {
   color: rgb(68, 68, 68);
+}
+
+.skill-data li {
+  font-weight: 300;
+  margin-left: 30px;
+  color: rgb(255, 51, 51);
+  margin-bottom: 2px;
+}
+
+.skill-data li:first-child {
+  font-weight: 900;
+  list-style-type: none;
+  font-weight: 900;
+  color: black;
+  list-style-type: none;
+  margin-left: 0;
 }
