@@ -51,14 +51,22 @@ nav .orange-bar {
   font-weight: 900;
 }
 
-.content {
+.top-content {
   display: flex;
   background-color: white;
-  height: 100%;
   width: 100%;
   max-width: 1030px;
   margin: auto auto;
-  padding: 145px 105px;
+  padding: 145px 105px 0;
+}
+
+.mid-content {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  max-width: 1030px;
+  margin: auto auto;
+  padding: 0 105px;
 }
 
 .personal-data {
@@ -89,15 +97,18 @@ nav .orange-bar {
   font-weight: 600;
   letter-spacing: 6px;
   margin-bottom: -40px;
+  margin-left: 0;
 }
 
 .personal-data .title span {
+  color: white;
   position: relative;
   bottom: 0.1em;
+  right: 0;
   font-size: x-small;
 }
 
-.personal-data-list {
+.personal-data ul {
   border: 1px solid rgb(153, 153, 153);
   border-top: 0;
   margin: auto -1px;
@@ -107,16 +118,16 @@ nav .orange-bar {
   font-weight: 900;
 }
 
-.personal-data-list p {
+.personal-data p {
   color: rgb(68, 68, 68);
 }
 
-.personal-data-list li {
+.personal-data li {
   margin: 10px;
   margin-bottom: 20px;
 }
 
-.right-content {
+.right-box {
   border-bottom: 1px solid rgb(153, 153, 153);
   margin-top: 80px;
   width: 60%;
@@ -125,15 +136,16 @@ nav .orange-bar {
   padding-left: 50px;
 }
 
-.right-content .title {
+.right-box .title {
   color: rgb(153, 153, 153);
   font-size: 15px;
   font-weight: 900;
   letter-spacing: 5px;
-  margin: auto auto 40px -22px;
+  margin-bottom: 40px;
+  margin-left: -22px;
 }
 
-.right-content .title span {
+.right-box .title span {
   position: relative;
   bottom: 0.1em;
   right: -7px;
@@ -141,19 +153,19 @@ nav .orange-bar {
   font-size: x-small;
 }
 
-.right-content p {
+.right-box p {
   color: #1da1b8;
   font-size: 18px;
 }
 
-.right-content li {
+.right-box li {
   margin-top: 25px;
   color: rgb(68, 68, 68);
   font-size: 14px;
   list-style-type: none;
 }
 
-.right-content li span {
+.right-box li span {
   font-weight: 900;
   color: black;
 }
@@ -162,7 +174,7 @@ nav .orange-bar {
   padding-bottom: 40px;
 }
 
-.right-content hr {
+.right-box hr {
   width: auto;
   margin-left: -20px;
   border: 0;
@@ -171,4 +183,46 @@ nav .orange-bar {
 
 .work-data {
   margin-top: 60px;
+}
+
+.language-data {
+  position: relative;
+  width: 40%;
+  margin: auto 1px;
+  padding: 40px 39px 20px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.language-data:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 25%;
+  height: 50%;
+  border-right: 1px solid rgb(153, 153, 153);
+}
+
+.mid-content .title {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-left: -23px;
+  margin-bottom: 25px;
+}
+
+.mid-content .title span {
+  position: relative;
+  bottom: 0.1em;
+  right: -7px;
+  color: rgb(255, 51, 51);
+  font-size: x-small;
+}
+
+.mid-content ul {
+  list-style-type: none;
+}
+
+.mid-content p {
+  color: rgb(68, 68, 68);
 }
