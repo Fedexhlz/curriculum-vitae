@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&family=Roboto:wght@300;500;700&family=Titillium+Web:wght@300;600;700;900&display=swap');
 
 * {
   margin: 0;
@@ -12,6 +12,10 @@ body {
   background-color: rgb(33, 33, 33);
   min-height: 100vh;
   padding: 42px;
+}
+
+a {
+  color: black;
 }
 
 nav {
@@ -31,9 +35,9 @@ nav .blue-bar {
 }
 
 nav .orange-bar p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 700;
   color: #1da1b8;
   position: absolute;
   margin-top: -80px;
@@ -133,7 +137,7 @@ nav .orange-bar {
   margin-top: 80px;
   width: 60%;
   height: auto;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-left: 50px;
 }
 
@@ -142,14 +146,13 @@ nav .orange-bar {
 }
 
 .work-data {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .right-box .title {
   color: rgb(153, 153, 153);
   font-size: 15px;
-  letter-spacing: 5px;
-  margin-bottom: 40px;
+  letter-spacing: 4px;
   margin-left: -22px;
 }
 
@@ -201,7 +204,7 @@ nav .orange-bar {
 .reference-data .title {
   color: rgb(153, 153, 153);
   font-size: 15px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   margin-left: -23px;
   margin-bottom: 25px;
 }
@@ -243,6 +246,9 @@ nav .orange-bar {
   top: 15%;
   height: 75%;
   border-left: 1px solid rgb(153, 153, 153);
+}
+.skill-data ul {
+  margin-bottom: 15px;
 }
 
 .skill-data li {
